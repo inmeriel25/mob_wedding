@@ -56,7 +56,7 @@ $(function(){
 
 
 function galleryArrowClick1(){
-	var $this = $(this);
+    var $this = $(this);
     var $pagenav = $this.parent()
     var $current = $pagenav.find('.active');
 
@@ -87,7 +87,7 @@ function galleryArrowClick2(){
 
 
 function galleryArrowClick3(){
-	var ele = document.querySelector('.arrow2');
+    var ele = document.querySelector('.arrow2');
     var $slider = ele.closest('.slider-2');
 
     var $current = $slider.find('.page-nav > div.active');
@@ -101,7 +101,7 @@ function galleryArrowClick3(){
 }
   
 function phoneClick(){
-	$(".call_popup").hide();
+    //$(".call_popup").hide();
     $('.phone').on('click', function(){
         $(".call_popup").css("display","flex");
         $("body").css("overflow","hidden");
@@ -158,7 +158,7 @@ function copy_to_clipboard4() {
     alert('계좌번호가 복사되었습니다.');
 }
 
-   function kakaoShare() {
+function kakaoShare() {
     Kakao.Link.sendDefault({
 	objectType: 'feed',
 	content: {
