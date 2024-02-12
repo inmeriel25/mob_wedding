@@ -226,7 +226,7 @@
 								</div>
 								<div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 103;">
 								<div title="" style="position: absolute; overflow: hidden; box-sizing: content-box !important; cursor: inherit; left: 225px; top: 132px; width: 22px; height: 33px;">
-								<map name="nmarker-A684D2A6-2F6F-4940-972C-A39FC3E91B18"><area href="#" shape="poly" coords="11,0,9,0,6,1,4,2,2,4,0,8,0,12,1,14,2,16,5,19,5,20,6,23,8,26,9,30,9,34,13,34,13,30,14,26,16,23,17,20,17,19,20,16,21,14,22,12,22,12,22,8,20,4,18,2,16,1,13,0" alt="마커의 경위도는 128.748064,35.818957 입니다." style="display: block; cursor: pointer;"></map>
+								<map name="nmarker-A684D2A6-2F6F-4940-972C-A39FC3E91B18"><area href="#" shape="poly" coords="11,0,9,0,6,1,4,2,2,4,0,8,0,12,1,14,2,16,5,19,5,20,6,23,8,26,9,30,9,34,13,34,13,30,14,26,16,23,17,20,17,19,20,16,21,14,22,12,22,12,22,8,20,4,18,2,16,1,13,0" alt="마커의 경위도는 127.0313219,37.2592852 입니다." style="display: block; cursor: pointer;"></map>
 								<img draggable="false" unselectable="on" src="http://static.naver.net/maps/mantle/1x/marker-default.png" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; user-select: none; -webkit-user-drag: none; box-sizing: content-box !important; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; position: absolute; cursor: inherit; width: 22px; height: 33px; left: 0px; top: 0px;">
 								<img src="http://static.naver.net/maps/mantle/1x/dot.gif" alt="" usemap="#nmarker-A684D2A6-2F6F-4940-972C-A39FC3E91B18" style="position: absolute; border: 0px; left: 0px; top: 0px; max-width: none !important; max-height: none !important; min-width: 0px !important; min-height: 0px !important; user-select: none; width: 22px; height: 33px;"></div></div><div style="overflow: visible; width: 100%; height: 0px; position: absolute; margin: 0px; padding: 0px; border: 0px none; top: 0px; left: 0px; z-index: 106;">
 								</div>
@@ -270,6 +270,23 @@
 						<a target="_blank" href="http://www.openstreetmap.org/copyright" style="pointer-events: auto; white-space: pre; color: rgb(68, 68, 68); float: left; display: none;"> /OpenStreetMap</a>
 					</div>
 				</div>
+			</div>
+			<script>
+                    var map = new naver.maps.Map("map", {
+                      center: new naver.maps.LatLng(37.2592852, 127.0313219),
+                      zoom: 17,
+                    });
+                    var marker = new naver.maps.Marker({
+                      position: new naver.maps.LatLng(37.2592852, 127.0313219),
+                      map: map,
+                    });
+
+                    var map = new naver.maps.Map('map', mapOptions);
+            </script>
+			<div class="map_ico">
+				<a href="https://naver.me/5AfyXoy4"><img src="/img/map1.png" class="ico_img4">네이버맵</a>    
+				<a href="http://kko.to/Ykt_i3iKpz"><img src="/img/map2.png" class="ico_img4">카카오맵</a>    
+				<a href="https://surl.tmap.co.kr/59606f41"><img src="/img/map3.png" class="ico_img4">티맵</a>    
 			</div>			
 			<div class="map_guide">
 				<ul>
