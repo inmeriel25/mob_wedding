@@ -143,6 +143,16 @@ function dayCount(){
 let countdownInterval = setInterval(dayCount, 1000);
 
 // 계좌번호 복사하기 클릭
+
+// 계좌번호 복사하기 클릭
+function copy_to_clipboard(id) {    
+    var copyText = document.getElementById(id);
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("Copy");
+    alert('계좌번호가 복사되었습니다.');
+}
+
 function copy_to_clipboard3() {    
     var copyText = document.getElementById('accCopy3');
     copyText.select();
