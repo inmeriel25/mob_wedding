@@ -52,6 +52,14 @@ $(function(){
 		$post.click();
 	});
 
+	$('.phone').on('click', function(){
+	        $(".call_popup").css("display","flex");
+	        $("body").css("overflow","hidden");
+	});
+	$('.close').on('click', function(){
+		$(".call_popup").hide();
+		$("body").css("overflow","auto");
+	});
 });
 
 
