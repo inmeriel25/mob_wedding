@@ -1,54 +1,56 @@
 
 $(function(){
-     // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+    // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
     Kakao.init('89c3297cf7155951c8014797417c4e54');
 
     // SDK 초기화 여부를 판단합니다.
     console.log(Kakao.isInitialized());
-
-    EC$(document).on('click', '.slider-2 .page-nav > div', function () {
-        var $this = $(this);
-        var $pagenav = $this.parent()
-        var $current = $pagenav.find('.active');
-
-        $current.removeClass('active');
-        $this.addClass('active');
-
-        var index = $this.index();
-        var $슬라이더 = $this.closest('.slider-2');
-
-        $슬라이더.find('.slides > div.active').removeClass('active');
-        $슬라이더.find('.slides > div').eq(index).addClass('active');    
-    });
-
-
-    EC$(document).on('click', '.slider-2 > .side-btns > div:first-child', function () {
-        var $this = $(this);
-        var $slider = $this.closest('.slider-2');
-
-        var $current = $slider.find('.page-nav > div.active');
-        var $post = $current.prev();
-
-        if ( $post.length == 0 ) {
-            $post = $slider.find('.page-nav > div:last-child');
-        }
-
-        $post.click();   
-    });
-
-    EC$(document).on('click', '.slider-2 > .side-btns > div:last-child', function () {
-        var $this = $(this);
-        var $slider = $this.closest('.slider-2');
-
-        var $current = $slider.find('.page-nav > div.active');
-        var $post = $current.next();
-
-        if ( $post.length == 0 ) {
-            $post = $slider.find('.page-nav > div:first-child');
-        }
-
-        $post.click();
-    });
+			
+	 $('.slider-2 .page-nav > div').click(function() {
+	
+		var $this = $(this);
+		var $pagenav = $this.parent()
+		var $current = $pagenav.find('.active');
+	
+		$current.removeClass('active');
+		$this.addClass('active');
+	
+		var index = $this.index();
+		var $슬라이더 = $this.closest('.slider-2');
+	
+		$슬라이더.find('.slides > div.active').removeClass('active');
+		$슬라이더.find('.slides > div').eq(index).addClass('active');
+	
+	
+	});
+	
+	$('.slider-2 > .side-btns > div:first-child').click(function() {
+		var $this = $(this);
+		var $slider = $this.closest('.slider-2');
+	
+		var $current = $slider.find('.page-nav > div.active');
+		var $post = $current.prev();
+	
+		if ( $post.length == 0 ) {
+			$post = $slider.find('.page-nav > div:last-child');
+		}
+	
+		$post.click();
+	});
+	
+	$('.slider-2 > .side-btns > div:last-child').click(function() {
+		var $this = $(this);
+		var $slider = $this.closest('.slider-2');
+	
+		var $current = $slider.find('.page-nav > div.active');
+		var $post = $current.next();
+	
+		if ( $post.length == 0 ) {
+			$post = $slider.find('.page-nav > div:first-child');
+		}
+	
+		$post.click();
+	});
 
 });
 
