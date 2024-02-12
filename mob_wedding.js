@@ -164,18 +164,18 @@ function copy_to_clipboard4() {
 	content: {
 	    title: '이동훈♥이유정 결혼합니다.',
 	    description: '2024년 3월 17일 낮 12시 30분 이비스앰배서더호텔 15층 베르사이유 홀',
-	    imageUrl: 'https://birdylab.cafe24.com/skin-mobile/img/main1.jpg',
+	    imageUrl: 'https://mcard.fromtoday.co.kr/w/25gC0r/photos/25gC0r_mcard_2024-02-03_7954abc84eee42109f2f73b75e9d5750_w1280.jpg',
 	    link: {
-		mobileWebUrl: 'https://birdylab.cafe24.com/skin-mobile/lees_wedding.html',
-		webUrl: 'https://birdylab.cafe24.com/skin-mobile/lees_wedding.html',
+		mobileWebUrl: 'https://inmeriel25.github.io/mob_wedding/mob_wedding.html',
+		    webUrl: 'https://inmeriel25.github.io/mob_wedding/mob_wedding.html',
 	    },
 	},
 	buttons: [
 	    {
 		title: '모바일청첩장 보기',
 		link: {
-		    mobileWebUrl: 'https://birdylab.cafe24.com/skin-mobile/lees_wedding.html',
-		    webUrl: 'https://birdylab.cafe24.com/skin-mobile/lees_wedding.html',
+		    mobileWebUrl: 'https://inmeriel25.github.io/mob_wedding/mob_wedding.html',
+		    webUrl: 'https://inmeriel25.github.io/mob_wedding/mob_wedding.html',
 		},
 	    },
 	],
