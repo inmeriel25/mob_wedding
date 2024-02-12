@@ -157,3 +157,30 @@ function copy_to_clipboard4() {
     document.execCommand("Copy");
     alert('계좌번호가 복사되었습니다.');
 }
+
+   function kakaoShare() {
+    Kakao.Link.sendDefault({
+	objectType: 'feed',
+	content: {
+	    title: '이동훈♥이유정 결혼합니다.',
+	    description: '2024년 3월 17일 낮 12시 30분 이비스앰배서더호텔 15층 베르사이유 홀',
+	    imageUrl: 'https://birdylab.cafe24.com/skin-mobile/img/main1.jpg',
+	    link: {
+		mobileWebUrl: 'https://birdylab.cafe24.com/skin-mobile/lees_wedding.html',
+		webUrl: 'https://birdylab.cafe24.com/skin-mobile/lees_wedding.html',
+	    },
+	},
+	buttons: [
+	    {
+		title: '모바일청첩장 보기',
+		link: {
+		    mobileWebUrl: 'https://birdylab.cafe24.com/skin-mobile/lees_wedding.html',
+		    webUrl: 'https://birdylab.cafe24.com/skin-mobile/lees_wedding.html',
+		},
+	    },
+	],
+	// 카카오톡 미설치 시 카카오톡 설치 경로이동
+	installTalk: true,
+    })
+}
+
